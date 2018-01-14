@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+  <link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-grey-light">
+  <div class="container p-reg mx-auto">
+    <header class="bg-green text-white p-reg flex items-center">
+      <span class="text-5xl font-bold inline-block leading-none flex-none"><a class="link link-nav" href="/">FYI</a></span>
+      <span class="text-xl inline-block ml-half flex-none"><a class="link link-nav" href="/">by Colin</a></span>
+      <nav class="flex-grow ml-half text-right">
+        <a class="link link-nav" href="/issues/">Archive</a>
+      </nav>
+    </header>
+    <div id="mainBody" class="p-reg bg-white text-lg leading-normal">
+      {{ block "main" . }}Empty page{{ end }}
+    </div>
+    <footer class="bg-grey-dark text-white p-reg">
+      Brought to you by Colin Bate (fun-links@colin.fyi)<br>
+      25 Front Street, Hamilton, Bermuda
+    </footer>
+  </div>
+  <script src="/index.js"></script>
+</body>
+</html>

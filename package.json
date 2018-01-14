@@ -1,0 +1,17 @@
+{
+  "name": "colin.fyi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tailwind build ./src/index.tailwind.css -c ./tailwind.js -o ./site/static/index.css && hugo serve -s site",
+    "build": "tailwind build ./src/index.tailwind.css -c ./tailwind.js -o ./site/static/index.css && hugo -s site",
+    "css": "tailwind build ./src/index.tailwind.css -c ./tailwind.js -o ./site/static/index.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^0.4.0"
+  }
+}

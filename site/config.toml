@@ -1,0 +1,15 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "FYI by Colin"
+disableKinds = ["sitemap"]
+
+[taxonomies]
+  tag = "tags"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+  section = ["HTML"]
+  taxonomy = ["HTML"]
+  taxonomyTerm = ["HTML"]
+

@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <main aria-role="main">
+    <div class="homepage-content">
+      {{.Content}}
+    </div>
+    <div>
+      {{ range first 10 (where .Data.Pages "Type" "issue") }}
+          {{ .Render "summary"}}
+      {{ end }}
+    </div>
+  </main>
+{{ end }}

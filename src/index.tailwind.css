@@ -1,0 +1,39 @@
+@tailwind preflight;
+
+ /**
+  * Here you would add any of your custom component classes; stuff that you'd
+  * want loaded *before* the utilities so that the utilities could still
+  * override them.
+  *
+  * Example:
+  *
+  * .btn { ... }
+  * .form-input { ... }
+  *
+  * Or if using a preprocessor or `postcss-import`:
+  *
+  * @import "components/buttons";
+  * @import "components/forms";
+  */
+.link {
+  @apply .no-underline;
+}
+
+.link-body {
+  @apply .text-blue;
+}
+
+.link-nav {
+  @apply .text-white;
+}
+
+.link-decoration .decoration {
+  @apply .invisible;
+}
+
+.link-decoration:hover .decoration {
+  @apply .visible;
+}
+ 
+@tailwind utilities;
+ 
